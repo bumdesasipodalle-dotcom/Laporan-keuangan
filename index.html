@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BUMDesa Maju Sejahtera — Sistem Keuangan</title>
+<meta name="description" content="Mengalihkan ke Sistem Pembukuan Keuangan BUMDesa Maju Sejahtera">
+
+<!-- ====== REDIRECT OTOMATIS (paling cepat, jalan sebelum CSS/JS dimuat) ====== -->
+<meta http-equiv="refresh" content="2;url=https://script.google.com/macros/s/AKfycbx-gg7L_jzL0mh4UhnRgMc05v5iOXTO4-WD4zLGePJdg6vo4bpGGpwFh5NZt-mdtiwD/exec">
+
+<style>
+  :root{
+    --bg:#0F2D24;
+    --bg2:#143A2E;
+    --green:#1D9E75;
+    --green-light:#5FCBA3;
+    --cream:#F4F1EA;
+    --text:#F4F1EA;
+    --text-dim:#9FC4B5;
+    --amber:#E8B04B;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{
+    height:100%;
+    font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+    background:radial-gradient(ellipse at top, var(--bg2) 0%, var(--bg) 70%);
+    color:var(--text);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+  }
+  .wrap{
+    text-align:center;
+    padding:40px 32px;
+    max-width:440px;
+    animation:fadeUp .7s ease both;
+  }
+  @keyframes fadeUp{
+    from{opacity:0;transform:translateY(16px)}
+    to{opacity:1;transform:translateY(0)}
+  }
+  .icon-box{
+    width:84px;height:84px;
+    margin:0 auto 24px;
+    border-radius:20px;
+    background:linear-gradient(145deg, var(--green) 0%, #0F6E56 100%);
+    display:flex;align-items:center;justify-content:center;
+    font-size:40px;
+    box-shadow:0 12px 32px -8px rgba(29,158,117,.5);
+    position:relative;
+  }
+  .icon-box::after{
+    content:'';
+    position:absolute;
+    inset:-6px;
+    border-radius:24px;
+    border:1.5px solid rgba(95,203,163,.3);
+    animation:pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse{
+    0%,100%{transform:scale(1);opacity:.6}
+    50%{transform:scale(1.08);opacity:0}
+  }
+  h1{
+    font-size:21px;
+    font-weight:700;
+    margin-bottom:6px;
+    letter-spacing:-0.2px;
+  }
+  .sub{
+    font-size:13px;
+    color:var(--text-dim);
+    margin-bottom:28px;
+    line-height:1.5;
+  }
+  .loader{
+    width:100%;
+    height:4px;
+    background:rgba(255,255,255,.08);
+    border-radius:99px;
+    overflow:hidden;
+    margin-bottom:18px;
+  }
+  .loader-fill{
+    height:100%;
+    width:0%;
+    background:linear-gradient(90deg, var(--green-light), var(--green));
+    border-radius:99px;
+    animation:fill 2s linear forwards;
+  }
+  @keyframes fill{
+    from{width:0%}
+    to{width:100%}
+  }
+  .status{
+    font-size:12px;
+    color:var(--text-dim);
+    margin-bottom:26px;
+  }
+  .status strong{color:var(--green-light);font-weight:600}
+  .manual-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:11px 22px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:10px;
+    color:var(--text);
+    text-decoration:none;
+    font-size:13px;
+    font-weight:600;
+    transition:all .2s ease;
+  }
+  .manual-link:hover{
+    background:rgba(255,255,255,.1);
+    border-color:var(--green-light);
+    transform:translateY(-1px);
+  }
+  .footer-note{
+    margin-top:28px;
+    font-size:11px;
+    color:rgba(159,196,181,.55);
+    letter-spacing:.3px;
+  }
+  .badge-units{
+    display:flex;
+    gap:8px;
+    justify-content:center;
+    margin-top:18px;
+    flex-wrap:wrap;
+  }
+  .badge{
+    font-size:10.5px;
+    font-weight:600;
+    padding:4px 10px;
+    border-radius:99px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.1);
+    color:var(--text-dim);
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="icon-box">🏛</div>
+  <h1>BUMDesa Maju Sejahtera</h1>
+  <p class="sub">Sistem Pembukuan &amp; Pelaporan Keuangan<br>Mengalihkan ke aplikasi...</p>
+
+  <div class="loader"><div class="loader-fill"></div></div>
+  <p class="status">Menghubungkan ke <strong>Google Apps Script</strong>…</p>
+
+  <a class="manual-link" href="https://script.google.com/macros/s/AKfycbx-gg7L_jzL0mh4UhnRgMc05v5iOXTO4-WD4zLGePJdg6vo4bpGGpwFh5NZt-mdtiwD/exec" id="manualLink">
+    Buka Sekarang →
+  </a>
+
+  <div class="badge-units">
+    <span class="badge">🏪 Retribusi Pasar Desa</span>
+    <span class="badge">🐟 Pembesaran Ikan Nila</span>
+  </div>
+
+  <p class="footer-note">script.google.com/macros • Tutup tab ini jika sudah terbuka</p>
+</div>
+
+<script>
+  // Redirect via JS sebagai cadangan (lebih cepat dari meta refresh di banyak browser)
+  var target = "https://script.google.com/macros/s/AKfycbx-gg7L_jzL0mh4UhnRgMc05v5iOXTO4-WD4zLGePJdg6vo4bpGGpwFh5NZt-mdtiwD/exec";
+
+  // Simpan ke riwayat tanpa membuat entri "kembali" yang aneh
+  setTimeout(function () {
+    window.location.replace(target);
+  }, 1500);
+</script>
+
+</body>
+</html>
